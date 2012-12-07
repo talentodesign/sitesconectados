@@ -1,10 +1,12 @@
 /* Import style sheets, hiding from IE/Mac \*/
 @import url("reset.css");
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,700");
 /* End of import hide */
 /* GERAL */
 body{
+    font-family: Verdana, sans-serif;
     .centraliza{
-    	width:;
+    	width:1000px;
     	margin:0 auto;
     	}
     a, a:active, a:visited{
@@ -21,10 +23,109 @@ body{
     }
 /* HEADER */
 #header{
+    #infinito{
+        position:absolute;
+        width:100%;
+        height:478px;
+        top:0;
+        z-index:-1;
+        }
+    #logo{
+        height:478px;
+        background:url(../images/logo_topo.jpg) top center no-repeat;
+        }
+    #menu{
+        height:49px;
+        background:url(../images/menu.jpg) top repeat-x;
+        color:white;
+        font-size:20px;
+        ul{
+            padding-top:10px;
+            width:570px;
+            list-style:none;
+            li{
+                float:left;
+                margin-right:8px;
+                img{
+                    padding:3px 0;
+                    }
+                }
+            }
+        }
 	}
 /* FOOTER */
 #footer{
 	}
 /* CONTEUDO */
 #content{
+    /* PADRÕES */
+    .title_pg{
+        padding:24px 0 0 58px;
+        }
+    /* PÁGINAS */
+    #oqe{
+        height:1002px;
+        background:url(../images/oqe/bk.jpg) top repeat-x;
+        }
+    #pq{
+        height:947px;
+        background:url(../images/pq/bk.jpg) top repeat-x;
+        }
+    #noticias{
+        height:947px;
+        background:url(../images/noticias/bk.jpg) top repeat-x;
+        #indice{
+            float:left;
+            margin:68px 0 0 0;
+            ul{
+                list-style:none;
+                li{
+                    margin-bottom:2px;
+                    width:447px;
+                    height:136px;
+                    background-color:#facf8b;
+                    color:#f99a00;
+                    .data{
+                        float:left;
+                        margin-top:14px;
+                        width:85px;
+                        height:110px;
+                        text-align:center;
+                        font-size:31px;
+                        font-family: 'Oswald', sans-serif;
+                        text-transform:uppercase;
+                        border-right:1px solid #f99a00;
+                        span{
+                            font-size:55px;
+                            }
+                        }
+                    .resumo{
+                        float:left;
+                        padding:20px 10px;
+                        width:328px;
+                        font-size:15px;
+                        span{
+                            font-weight:bold;
+                            }
+                        }
+                    }
+                }
+            #nav{
+                padding:10px;
+                background-color:#f99a00;
+                text-align:center;
+                font-family: 'Oswald', sans-serif;
+                font-size:15px;
+                color:white;        
+                }
+            }
+        }
+    #parceiros{
+        height:1002px;
+        background:url(../images/parceiros/bk.jpg) top repeat-x;
+        }
+    #contato{
+        height:936px;
+        background:url(../images/contato/bk.jpg) top repeat-x;
+        }
 	}

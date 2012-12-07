@@ -2,15 +2,15 @@
 // ==================================== DADOS INICIAIS DO SITE ==================================== 
 
 //Nome do Site
-$core_nome     = "";
+$core_nome     = "Sites Conectados";
 //Descrição do Site
-$core_desc     ="";
+$core_desc     ="Site do novo produto de integração de midias.";
 //Palavras-Chaves sobre o site, use virgulas para separa-las
-$core_keywords =""; 
+$core_keywords ="SITES CONECTADOS, TALENTO, DESIGN, ONE BYTE, FACEBOOK"; 
 //Pasta do projeto
-$core_pasta    ="";
+$core_pasta    ="sitesconectados";
 //E-mail para recebimento das mensagens via site
-$core_email    =""; 
+$core_email    ="genival@talentodesign.com.br"; 
 
 // ========================================== FUNÇÕES ==============================================
 if($core_nome == "" || $core_desc == "" || $core_keywords == "" || $core_pasta == "" || $core_email == ""){

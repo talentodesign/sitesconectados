@@ -1,10 +1,15 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
 @import url("reset.css");
+
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,700");
 /* Import style sheets, hiding from IE/Mac \*/
 /* End of import hide */
 /* GERAL */
+body {
+  font-family: Verdana, sans-serif;
+}
 body .centraliza {
-  width: ;
+  width: 1000px;
   margin: 0 auto;
 }
 body a,
@@ -21,5 +26,108 @@ body .separator {
   clear: both;
 }
 /* HEADER */
+#header #infinito {
+  position: absolute;
+  width: 100%;
+  height: 478px;
+  top: 0;
+  z-index: -1;
+}
+#header #logo {
+  height: 478px;
+  background: url(../images/logo_topo.jpg) top center no-repeat;
+}
+#header #menu {
+  height: 49px;
+  background: url(../images/menu.jpg) top repeat-x;
+  color: white;
+  font-size: 20px;
+}
+#header #menu ul {
+  padding-top: 10px;
+  width: 570px;
+  list-style: none;
+}
+#header #menu ul li {
+  float: left;
+  margin-right: 8px;
+}
+#header #menu ul li img {
+  padding: 3px 0;
+}
 /* FOOTER */
 /* CONTEUDO */
+#content {
+  /* PADRÕES */
+
+  /* PÁGINAS */
+
+}
+#content .title_pg {
+  padding: 24px 0 0 58px;
+}
+#content #oqe {
+  height: 1002px;
+  background: url(../images/oqe/bk.jpg) top repeat-x;
+}
+#content #pq {
+  height: 947px;
+  background: url(../images/pq/bk.jpg) top repeat-x;
+}
+#content #noticias {
+  height: 947px;
+  background: url(../images/noticias/bk.jpg) top repeat-x;
+}
+#content #noticias #indice {
+  float: left;
+  margin: 68px 0 0 0;
+}
+#content #noticias #indice ul {
+  list-style: none;
+}
+#content #noticias #indice ul li {
+  margin-bottom: 2px;
+  width: 447px;
+  height: 136px;
+  background-color: #facf8b;
+  color: #f99a00;
+}
+#content #noticias #indice ul li .data {
+  float: left;
+  margin-top: 14px;
+  width: 85px;
+  height: 110px;
+  text-align: center;
+  font-size: 31px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  border-right: 1px solid #f99a00;
+}
+#content #noticias #indice ul li .data span {
+  font-size: 55px;
+}
+#content #noticias #indice ul li .resumo {
+  float: left;
+  padding: 20px 10px;
+  width: 328px;
+  font-size: 15px;
+}
+#content #noticias #indice ul li .resumo span {
+  font-weight: bold;
+}
+#content #noticias #indice #nav {
+  padding: 10px;
+  background-color: #f99a00;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+#content #parceiros {
+  height: 1002px;
+  background: url(../images/parceiros/bk.jpg) top repeat-x;
+}
+#content #contato {
+  height: 936px;
+  background: url(../images/contato/bk.jpg) top repeat-x;
+}

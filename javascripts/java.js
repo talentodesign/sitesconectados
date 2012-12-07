@@ -62,4 +62,11 @@ $(document).ready(function(){
 	/* ------------ SLIDE JCYCLE ---------------------*/	
 	$("#slider").cycle({fx:"fade"});
 	
+	/*------------- SLIDE TO ------------------------*/
+	$("#header ul li a").click(function(){
+			var destino= $(this).attr("href");
+			$(destino).slideto({highlight: false});		
+			return false
+			});
+	
 });
