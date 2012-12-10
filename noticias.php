@@ -1,4 +1,4 @@
-                    
+
 <?php
 if(!isset($core_upado)){
     include("core.php");
@@ -89,9 +89,9 @@ $paginacao->set_pg_atual($pg);   //... a pagina atual.
 </ul>
 <div id="nav">
     <?php if($paginacao->has_anterior()){ ?>
-    ◄ <a href="<?php $paginacao->antpg(); ?>">ANTERIORES&nbsp;</a>&nbsp;
+    ◄ <a href="<?php $paginacao->antpg(); ?>" id="ant">ANTERIORES&nbsp;</a>&nbsp;
     <?php } if($paginacao->has_proximo()){ ?>
-    <a href="<?php $paginacao->proxpg(); ?>">&nbsp;PRÓXIMAS</a> ►
+    <a href="<?php $paginacao->proxpg(); ?>" id="prox">&nbsp;PRÓXIMAS</a> ►
     <?php } ?>
 </div>
 <?php } ?>

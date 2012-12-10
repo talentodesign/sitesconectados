@@ -70,19 +70,38 @@ $(document).ready(function(){
 			});
 	
 	/*--------- Navegação Noticias AJAX ------------*/
+	var pg_atual=1;
+
 	var link_indice=function(){
 		$("#indice li a").click(function(){
-		$("body").css("cursor","wait");
-		$("#indice li a").css("cursor","wait");
-		var id=$(this).attr("href");
-		$('#noticia_area').load('noticias.php?acao=noticia&id='+id,function(){
-			$('#noticia').jScrollPane();
-			$("body").css("cursor","auto");
-			$("#indice li a").css("cursor","auto");
-			});
-		return false;	
-		});};
+			$("body, a").css("cursor","wait");
+			var id=$(this).attr("href");
+			$('#noticia_area').load('noticias.php?acao=noticia&id='+id,function(){
+				$('#noticia').jScrollPane();
+				$("body, a").css("cursor","auto");
+				});
+			return false;	
+		});
+		$("#indice #nav a").click(function(){
+			var nav=$(this).attr("id");
+			if(nav=="prox"){
+				pg_atual++;
+			}
+			else{
+				pg_atual--;
+			}
+			$("body, a").css("cursor","wait");
+			$("#indice").load("noticias.php?acao=lista&pg="+pg_atual,function(){
+				$("body, a").css("cursor","auto");
+				setTimeout(link_indice,100);
+				});
+			return false;
+		});
+	};
+
 	setTimeout(link_indice,100);
+
+
 	
 });
 $(window).load(function(){
