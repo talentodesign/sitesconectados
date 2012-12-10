@@ -90,4 +90,6 @@ function wp_funcoes(){
 	define('WP_USE_THEMES', false);
 	require('./wordpress/wp-load.php');
 	}
+ $core_upado=true;
+ 
 ?>

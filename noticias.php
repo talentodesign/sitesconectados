@@ -1,5 +1,8 @@
                     
 <?php
+if(!isset($core_upado)){
+    include("core.php");
+}
 if(!isset($wp_upado)){
     wp_funcoes();
 }
@@ -78,7 +81,7 @@ $paginacao->set_pg_atual($pg);   //... a pagina atual.
             <?php echo get_the_date('M'); ?>
         </div>
         <div class="resumo">
-            <span><a href=""><?php the_title(); ?></a></span><br>
+            <span><a href="<?php the_ID(); ?>"><?php the_title(); ?></a></span><br>
             <?php echo limit_words(get_the_excerpt(), '20'); ?>...
         </div>
     </li>

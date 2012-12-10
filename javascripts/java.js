@@ -68,9 +68,22 @@ $(document).ready(function(){
 			$(destino).slideto({highlight: false});		
 			return false
 			});
-	/*$('#noticia_area').load('noticias.php',function(){
-		$('#noticia').jScrollPane();
-	});*/
+	
+	/*--------- Navegação Noticias AJAX ------------*/
+	var link_indice=function(){
+		$("#indice li a").click(function(){
+		$("body").css("cursor","wait");
+		$("#indice li a").css("cursor","wait");
+		var id=$(this).attr("href");
+		$('#noticia_area').load('noticias.php?acao=noticia&id='+id,function(){
+			$('#noticia').jScrollPane();
+			$("body").css("cursor","auto");
+			$("#indice li a").css("cursor","auto");
+			});
+		return false;	
+		});};
+	setTimeout(link_indice,100);
+	
 });
 $(window).load(function(){
 	$('#noticia').jScrollPane();
