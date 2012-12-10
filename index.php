@@ -118,11 +118,25 @@
             <div class="centraliza">
                 <img src="<?php servidor(); ?>images/parceiros/title.png" alt="" class="title_pg">
             </div>
+            <div id="sub_parceiros" class="centraliza">
+            	<p>Conheça alguns de nossos parceiros.</p> 
+            </div>
+            <div id="conteudo_parceiros" class="centraliza">
+            
+            </div>
+            
+            
+            
         </div>
         <div id="contato">
             <div class="centraliza">
                 <img src="<?php servidor(); ?>images/contato/title.png" alt="" class="title_pg">
             </div>
+            <div id="sub_contato" class="centraliza">
+	            <p>Se você quer saber mais sobre como fazer negócio pela web.</p>
+				<p>Entre em contato conosco preenchendo o formulário abaixo.</p><br/>
+            </div>
+            
         </div>
     </div>
     <div id="footer">

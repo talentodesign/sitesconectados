@@ -73,6 +73,7 @@ body .separator {
 #content #oqe #conteudo {
   background: url(../images/oqe/bg_conteudo.png) no-repeat;
   height: 860px;
+  width: 900px;
   margin-top: 40px;
 }
 #content #oqe #conteudo #sub_titulo {
@@ -186,7 +187,23 @@ body .separator {
   height: 1002px;
   background: url(../images/parceiros/bk.jpg) top repeat-x;
 }
+#content #parceiros #sub_parceiros {
+  color: #0b6f8a;
+  margin-top: 60px;
+  padding-left: 130px;
+}
+#content #parceiros #conteudo_parceiros {
+  background-color: #fff;
+  margin-top: 20px;
+  width: 900px;
+  height: 780px;
+}
 #content #contato {
   height: 936px;
   background: url(../images/contato/bk.jpg) top repeat-x;
+}
+#content #contato #sub_contato {
+  color: #477201;
+  margin-top: 100px;
+  padding-left: 100px;
 }
