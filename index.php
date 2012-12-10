@@ -142,6 +142,7 @@
     <div id="footer">
     <?php $data=date("Y"); echo $data; ?> <!-- Data Atual -->
     </div>
+    <?php include("contato_msg.php"); ?>
   </body>
 </html>
 
