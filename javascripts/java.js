@@ -101,6 +101,10 @@ $(document).ready(function(){
 
 	setTimeout(link_indice,100);
 
+	/*-----------------PINGO --------------*/
+	$("#text_oqe img").click(function(){
+		$('#pingo').modal("show");
+	});
 
 	
 });
