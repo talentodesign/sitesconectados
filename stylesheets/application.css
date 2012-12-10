@@ -70,6 +70,28 @@ body .separator {
   height: 1002px;
   background: url(../images/oqe/bk.jpg) top repeat-x;
 }
+#content #oqe #conteudo {
+  background: url(../images/oqe/bg_conteudo.png) no-repeat;
+  height: 860px;
+  margin-top: 40px;
+}
+#content #oqe #conteudo #sub_titulo {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+#content #oqe #conteudo #text_oqe {
+  margin-top: 350px;
+  margin-left: 30px;
+  width: 390px;
+}
+#content #oqe #conteudo #text_oqe p {
+  color: #016683;
+  text-align: justify;
+}
+#content #oqe #conteudo #text_oqe img {
+  margin-top: 30px;
+  margin-left: 40px;
+}
 #content #pq {
   height: 947px;
   background: url(../images/pq/bk.jpg) top repeat-x;
