@@ -58,7 +58,7 @@
                     <?php 
                     $_GET['acao']="lista";
                     $_GET['pg']=1;
-                    include("noticias.php"); 
+                    //include("noticias.php"); 
 
                     ?>
                     <!--<ul>
@@ -84,7 +84,7 @@
                     <?php 
                     $_GET['acao']="noticia";
                     $wp_upado=true;
-                    include("noticias.php"); 
+                    //include("noticias.php"); 
 
                     ?>
                     <!--<div id="noticia">
