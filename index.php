@@ -22,8 +22,15 @@
     <div id="content">
         <div id="oqe">
             <div class="centraliza">
-                <img src="<?php servidor(); ?>images/oqe/title.png" alt="" class="title_pg">
+                <img src="<?php servidor(); ?>images/oqe/title.png" alt="" class="title_pg">               
             </div>
+            <div id="conteudo" class="centraliza">
+            	
+            
+            
+            </div>
+            
+            
         </div>
         <div id="pq">
             <div class="centraliza">
@@ -43,7 +50,7 @@
 
                     ?>
                     <!--<ul>
-                        <?php $i=0; while ($i<5) { ?>
+                        
                         <li>
                             <div class="data">
                                 <span>12</span><br>
@@ -54,7 +61,7 @@
                                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etl....
                             </div>
                         </li>
-                        <?php $i++; } ?>
+                       
                     </ul>
                     <div id="nav">
                         ◄ <a href="">ANTERIORES&nbsp;</a>&nbsp;
