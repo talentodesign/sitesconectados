@@ -68,5 +68,10 @@ $(document).ready(function(){
 			$(destino).slideto({highlight: false});		
 			return false
 			});
-	
+	/*$('#noticia_area').load('noticias.php',function(){
+		$('#noticia').jScrollPane();
+	});*/
+});
+$(window).load(function(){
+	$('#noticia').jScrollPane();
 });
