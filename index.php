@@ -120,9 +120,13 @@
             </div>
             <div id="sub_parceiros" class="centraliza">
             	<p>Conheça alguns de nossos parceiros.</p> 
-            </div>
-            <div id="conteudo_parceiros" class="centraliza">
+            </div>     
             
+            <div id="conteudo_parceiros" class="centraliza">            
+	            <img src="<?php servidor(); ?>images/parceiros/logo_homeplug.png" alt=""><br/>
+	            <img src="<?php servidor(); ?>images/parceiros/logo_feiradoempreendedor.png" alt="">
+	            <img src="<?php servidor(); ?>images/parceiros/logo_conjove.png" alt="">
+	            <img src="<?php servidor(); ?>images/parceiros/logo_acp.jpg" alt="">            
             </div>
             
             
@@ -137,10 +141,21 @@
 				<p>Entre em contato conosco preenchendo o formulário abaixo.</p><br/>
             </div>
             
-            <div id="formulario">
+            <div id="formulario" class="centraliza">
             <form action="">
             	<label for=""><img src="<?php servidor(); ?>images/contato/nome.png" alt=""></label><br>
                 <input type="text" name="" id="nome"><br>
+                
+                <label for=""><img src="<?php servidor(); ?>images/contato/empresa.png" alt=""></label><br>
+                <input type="text" name="" id="empresa"><br>
+                
+                <label for=""><img src="<?php servidor(); ?>images/contato/email.png" alt=""></label><br>
+                <input type="text" name="" id="email"><br>
+                
+                <label for=""><img src="<?php servidor(); ?>images/contato/mensagem.png" alt=""></label><br>
+                <textarea name="" id="mens" cols="30" rows="10"></textarea><br>
+                
+                <input type="image" src="<?php servidor(); ?>images/contato/enviar_off.png" alt="" class="botao" id="cont_bt">
             </form>
             
             </div>

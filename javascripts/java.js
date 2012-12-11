@@ -32,11 +32,11 @@ $(document).ready(function(){
 	
 	$("#cont_bt").click(function(){
 		var nome=$("#nome").val();
+		var empresa=$("#empresa").val();
 		var email=$("#email").val();
-		var tel=$("#tel").val();
 		var mens=$("#mens").val();
-		var dados="nome="+nome+"&email="+email+"&tel="+tel+"&mens="+mens;
-		if(nome =='' || email =='' || tel =='' || mens==''){
+		var dados="nome="+nome+"&empresa="+empresa+"&email="+email+"&mens="+mens;
+		if(nome =='' || empresa =='' || email =='' || mens==''){
 			$('#contato_vazio').modal("show");
 			}
 		else{
