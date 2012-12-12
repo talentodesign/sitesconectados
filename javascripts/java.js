@@ -44,11 +44,11 @@ $(document).ready(function(){
 			$('#contato_enviando').modal("show");
 			$.ajax({
 				type: "POST",
-				url: "../mail_contato.php",
+				url: "./mail_contato.php",
 				data: dados,
 				cache: false,
 				success: function(){
-					$("#contato_enviando p").html('<center><img src="../images/email-send-icon.png" alt=""></center>').find('center').hide().fadeIn("slow");
+					$("#contato_enviando p").html('<center><img src="./images/email-send-icon.png" alt=""></center>').find('center').hide().fadeIn("slow");
 					$("#contato_enviando h3").html('Mensagem Enviada');
 					$("input:text, textarea").val("");
 					setTimeout(some,2000);
@@ -102,11 +102,10 @@ $(document).ready(function(){
 	setTimeout(link_indice,100);
 
 	/*-----------------PINGO --------------*/
-	$("#text_oqe img").click(function(){
-		$('#pingo').modal("show");
-	});
-
-	
+		$('#pingo_popup').fancybox({
+			openEffect	: 'elastic',
+			closeEffect	: 'elastic'
+		});
 });
 $(window).load(function(){
 	$('#noticia').jScrollPane();

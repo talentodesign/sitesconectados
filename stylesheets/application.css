@@ -97,6 +97,9 @@ body .separator {
   height: 947px;
   background: url(../images/pq/bk.jpg) top repeat-x;
 }
+#content #pq #texto {
+  padding-top: 200px;
+}
 #content #noticias {
   height: 947px;
   background: url(../images/noticias/bk.jpg) top repeat-x;

@@ -24,22 +24,16 @@
             <div class="centraliza">
                 <img src="<?php servidor(); ?>images/oqe/title.png" alt="" class="title_pg">
             </div>
-            
             <div id="conteudo" class="centraliza">
-            
-            <div id="sub_titulo">
-            	<img src="<?php servidor(); ?>images/oqe/sub_title.png" alt="">
-            </div>
-            
-            <div id="text_oqe">
-            	<p>Construir uma plataforma integrada de sites coorporativos, considerando os conceitos de design moderno, integração e redução de custos, foi o que motivou as equipes das empresas Onbyte Tecnologia e Talento Design. Com o conceito de computação em nuvem, foi desenvolvida a plataforma PINGO, Plataforma Integrada de Gerenciamento de Negócios e Oportunidades. Que é capaz de gerenciar sozinha a publicação de conteúdo do site da empresa, redes sócias como facebook, twitter e google+, além de distribuir anúncios em sites parceiros como iPará, OLX e Trovit, aumentando assim as possibilidades de negócios na web.</p>
-<br/>
-<p>Conectar o seu negócio na plataforma PINGO significa aumentar a visibilidade do seu produto diminuindo o esforço de publicar nesses múltiplos canais disponíveis na Internet.</p>
-
-			<img src="<?php servidor(); ?>images/oqe/botao_oqe_off.png" alt="" class="botao">                
-            </div>
-            
-            
+                <div id="sub_titulo">
+                    <img src="<?php servidor(); ?>images/oqe/sub_title.png" alt="">
+                </div>
+                <div id="text_oqe">
+                    <p>Construir uma plataforma integrada de sites coorporativos, considerando os conceitos de design moderno, integração e redução de custos, foi o que motivou as equipes das empresas Onbyte Tecnologia e Talento Design. Com o conceito de computação em nuvem, foi desenvolvida a plataforma PINGO, Plataforma Integrada de Gerenciamento de Negócios e Oportunidades. Que é capaz de gerenciar sozinha a publicação de conteúdo do site da empresa, redes sócias como facebook, twitter e google+, além de distribuir anúncios em sites parceiros como iPará, OLX e Trovit, aumentando assim as possibilidades de negócios na web.</p>
+                    <br/>
+                    <p>Conectar o seu negócio na plataforma PINGO significa aumentar a visibilidade do seu produto diminuindo o esforço de publicar nesses múltiplos canais disponíveis na Internet.</p>
+                    <a id="pingo_popup" href="images/pingo_zoom.jpg"><img src="<?php servidor(); ?>images/oqe/botao_oqe_off.png" alt="" class="botao"></a>
+                </div>
             </div>
             
         </div>
@@ -47,7 +41,9 @@
             <div class="centraliza">
                 <img src="<?php servidor(); ?>images/pq/title.png" alt="" class="title_pg">
             </div>            
-            
+            <div id="texto" class="centraliza">
+                
+            </div>
         </div>
         <div id="noticias">
             <div class="centraliza">
@@ -58,7 +54,7 @@
                     <?php 
                     $_GET['acao']="lista";
                     $_GET['pg']=1;
-                    //include("noticias.php"); 
+                    include("noticias.php"); 
 
                     ?>
                     <!--<ul>
@@ -84,7 +80,7 @@
                     <?php 
                     $_GET['acao']="noticia";
                     $wp_upado=true;
-                    //include("noticias.php"); 
+                    include("noticias.php"); 
 
                     ?>
                     <!--<div id="noticia">
