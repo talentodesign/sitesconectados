@@ -63,7 +63,7 @@ $(document).ready(function(){
 	$("#slider").cycle({fx:"fade"});
 	
 	/*------------- SLIDE TO ------------------------*/
-	$("#header ul li a").click(function(){
+	$("#header ul li a, #voltar").click(function(){
 			var destino= $(this).attr("href");
 			$(destino).slideto({highlight: false});		
 			return false
@@ -102,10 +102,11 @@ $(document).ready(function(){
 	setTimeout(link_indice,100);
 
 	/*-----------------PINGO --------------*/
-		$('#pingo_popup').fancybox({
+		$('.pingo_popup').fancybox({
 			openEffect	: 'elastic',
 			closeEffect	: 'elastic'
 		});
+
 });
 $(window).load(function(){
 	$('#noticia').jScrollPane();
